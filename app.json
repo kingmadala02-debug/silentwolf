@@ -1,8 +1,8 @@
 {
   "name": "CRIMSON-XMD",
-  "description": "Professional WhatsApp Bot by KING - crimson-xmd with auto-session authentication",
-  "logo": "https://https://ibb.co/1tcJqmDf",
-  "keywords": ["whatsapp", "bot", "crimson-xmd", "baileys", "king"],
+  "description": "Professional WhatsApp Bot by KING - Join Group: https://chat.whatsapp.com/J2eUG8m4VmiCERMoxJHRd9 - crimson-xmd with auto-session",
+  "logo": "https://i.ibb.co/zWGkw7Jz/76022de0778.png",
+  "keywords": ["whatsapp", "bot", "crimson-xmd", "king"],
   "repository": "https://github.com/kingmadala02-debug/silentwolf.git",
   "scripts": {
     "start": "node --no-warnings --experimental-global-webcrypto index.js"

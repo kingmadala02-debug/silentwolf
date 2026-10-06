@@ -63,9 +63,9 @@ const _DM = '\x1b[2m\x1b[38;2;100;120;130m';
 const _R  = '\x1b[0m';
 
 console.log('');
-console.log(_GB + '    🐺  W O L F   T E C H  🐺' + _R);
+console.log(_GB + '    🩸  C R I M S O N   K I N G  🩸' + _R);
 console.log(_G  + '    ─────────────────────────' + _R);
-console.log(_W  + '    WOLFBOT  by  Silent  Wolf' + _R);
+console.log(_W  + '    CRIMSON-XMD  by  kingpin szn' + _R);
 console.log(_DM + '    Settings guardian active...' + _R);
 console.log('');
 

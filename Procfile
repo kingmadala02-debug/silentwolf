@@ -1,3 +1,0 @@
-GROUP_LINK=https://chat.whatsapp.com/J2eUG8m4VmiCERMoxJHRd9
-BOT_NAME=CRIMSON-XMD
-OWNER_NAME=KING

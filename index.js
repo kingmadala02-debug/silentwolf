@@ -196,13 +196,24 @@ process.on('SIGTERM', () => {
   }
 });
 
-// ── Load wolf.js ─────────────────────────────────────────────────────────────
+// ── Load crimson-xmd.js ─────────────────────────────────────────────────────────────
+// --- Load crimson-xmd.js ---
 const wolfPath = path.join(__dirname, 'wolf.js');
-const botSource = fs.readFileSync(wolfPath, 'utf8');
-const patchedSource = botSource.replace(
-  /createRequire\(\[([^\]]+)\]/g,
-  'createRequire(import.meta.url'
+let botSource = fs.readFileSync(wolfPath, 'utf8');
+let patchedSource = botSource.replace(
+/createRequire\[[^\]]+\]/g,
+'createRequire(import.meta.url)'
 );
+
+// --- CRIMSON-XMD BRANDING BY KING 👑 ---
+patchedSource = patchedSource
+.replace(/WOLF-BOT/g, 'CRIMSON-XMD')
+.replace(/WOLF BOT/g, 'CRIMSON-XMD')
+.replace(/WOLF/g, 'CRIMSON')
+.replace(/Silent Wolf/g, 'KING')
+.replace(/silentwolf/g, 'crimson-xmd')
+.replace(/👑 WOLF/g, '👑 CRIMSON-XMD by KING');
+
 const tmpBot = path.join(__dirname, '.bot_run.js');
 fs.writeFileSync(tmpBot, patchedSource);
 await import(tmpBot);
